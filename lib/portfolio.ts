@@ -70,7 +70,7 @@ export const projects: Project[] = [
     category: "PCB Design", categories: ["PCB Design", "UAV & Avionics", "Embedded Systems"], status: "Designed", visual: "battery", featured: true,
     summary: "A BQ76952-based board that measures UAV battery-cell voltage and temperature and reports data to a Raspberry Pi through a multiplexed I²C architecture.",
     tags: ["BQ76952", "Altium", "I²C", "Raspberry Pi", "Li-ion"],
-    coverImage: { src: "/projects/cell-monitoring-board/3d-view.png", alt: "Altium 3D render of the SUAV BQ76952 cell-monitoring board" },
+    coverImage: { src: "/projects/cell-monitoring-board/assembled-board.jpeg", alt: "Assembled SUAV BQ76952 cell-monitoring board" },
     images: [
       { src: "/projects/cell-monitoring-board/3d-view.png", alt: "Altium 3D render of the completed SUAV cell-monitoring PCB", caption: "Full-board 3D render — six-channel SUAV battery cell-monitoring architecture" },
       { src: "/projects/cell-monitoring-board/schematic.png", alt: "BQ76952 cell-monitoring channel schematic in Altium Designer", caption: "Representative BQ76952 monitoring channel — cell inputs, filtering, thermistors, and I²C" },
@@ -83,7 +83,7 @@ export const projects: Project[] = [
     media: ["System architecture", "Altium schematic", "PCB layout", "Hardware integration"]
   },
   {
-    slug: "autonomous-drone-gcs", shortTitle: "Autonomous Drone & GCS", title: "Autonomous Drone and Ground Control Station",
+    slug: "autonomous-drone-gcs", shortTitle: "SUAV Avionics & GCS", title: "SUAV Avionics and Ground-Control System",
     category: "UAV & Avionics", categories: ["UAV & Avionics", "Software"], status: "Completed", visual: "drone", featured: true,
     summary: "An ArduCopter aircraft with waypoint navigation, a custom web GCS for command and telemetry, live video, and purpose-built 6S1P Li-ion packs.",
     tags: ["ArduCopter", "pymavlink", "React", "FastAPI", "WebSockets"],
@@ -101,7 +101,7 @@ export const projects: Project[] = [
     media: ["Drone airframe", "Ground control interface", "Mission route", "Flight-test setup"]
   },
   {
-    slug: "embedded-in-embedded", shortTitle: "Embedded in Embedded", title: "Embedded in Embedded with Garmin",
+    slug: "embedded-in-embedded", shortTitle: "Embedded in Embedded (EiE)", title: "Embedded in Embedded (EiE)",
     category: "Embedded Systems", categories: ["Embedded Systems", "Software"], status: "Completed", visual: "firmware",
     summary: "Hands-on nRF52840 and Zephyr development through a University of Calgary extracurricular program led by Garmin engineers.",
     tags: ["Zephyr", "C", "nRF52840", "Device Trees", "GPIO"],
@@ -109,11 +109,11 @@ export const projects: Project[] = [
     images: [
       { src: "/projects/embedded-in-embedded/nrf52840-development-board.jpeg", alt: "Nordic Semiconductor nRF52840 development board with an attached LCD display", caption: "Program hardware — Nordic nRF52840 development board and LCD used for Zephyr firmware exercises" },
     ],
-    overview: "A Garmin engineer-led embedded systems program using the Nordic nRF52840 development board, embedded C, Zephyr RTOS, and a touchscreen LCD.",
-    requirements: ["nRF52840 development board", "Embedded C", "Zephyr RTOS workflow", "GPIO interfaces", "Devicetree configuration", "Touchscreen LCD integration"],
-    contributions: ["Configured and built Zephyr applications", "Implemented GPIO-driven peripheral behavior", "Worked with Devicetree configuration", "Developed a reaction-time testing application", "Integrated a touchscreen LCD", "Applied hardware-oriented debugging practices"],
-    process: "Engineer-led exercises connected firmware structure with physical peripherals, culminating in a reaction-time testing application that combined input handling, display behavior, and repeatable embedded builds.",
-    results: "Completed a working touchscreen reaction-time application and built a practical foundation in Zephyr RTOS, Devicetree, embedded C, and hardware-software integration.",
+    overview: "A structured extracurricular embedded program using the Nordic nRF52840 development board, embedded C, and the Zephyr ecosystem.",
+    requirements: ["nRF52840 development board", "Embedded C", "Zephyr build workflow", "Buttons and LEDs", "Device trees", "Debugging"],
+    contributions: ["Configured Zephyr projects", "Implemented button and LED control", "Worked with device trees", "Practised hardware-oriented debugging", "Learned real-time firmware structure", "Applied embedded development conventions"],
+    process: "Short implementation exercises were used to connect firmware structure with physical peripherals, emphasizing repeatable builds, device configuration, and debugging habits.",
+    results: "The program built a practical foundation in Zephyr, real-time firmware workflows, and hardware-software integration.",
     media: ["Development board", "Zephyr project", "Peripheral test", "Debug workflow"]
   },
   {
